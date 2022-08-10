@@ -6,7 +6,8 @@
     "scripts": {
         "start": "node backend/server.js",
         "server": "nodemon backend/server.js",
-        "client": "npm start --prefix frontend"
+        "client": "npm start --prefix frontend",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "repository": {
         "type": "git",
@@ -17,5 +18,8 @@
     "bugs": {
         "url": "https://github.com/doniaskima/mern-satck-authontification/issues"
     },
-    "homepage": "https://github.com/doniaskima/mern-satck-authontification#readme"
+    "homepage": "https://github.com/doniaskima/mern-satck-authontification#readme",
+    "devDependencies": {
+        "concurrently": "^7.3.0"
+    }
 }
